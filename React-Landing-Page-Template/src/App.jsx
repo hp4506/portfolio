@@ -24,48 +24,58 @@ const App = () => {
     
     // Cursor Glow Effect
     const cursor = document.querySelector(".cursor-glow");
-    window.addEventListener("mousemove", (e) => {
-      gsap.to(cursor, {
-        x: e.clientX,
-        y: e.clientY,
-        duration: 0.5,
-        ease: "power2.out"
-      });
-    });
+    const handleMouseMove = (e) => {
+      if (cursor) {
+        gsap.to(cursor, {
+          x: e.clientX,
+          y: e.clientY,
+          duration: 0.5,
+          ease: "power2.out"
+        });
+      }
+    };
+    window.addEventListener("mousemove", handleMouseMove);
 
     // GSAP Animations
-    gsap.from(".intro h1", {
-      y: 100,
-      opacity: 0,
-      duration: 2,
-      ease: "power4.out"
-    });
+    const ctx = gsap.context(() => {
+      gsap.from(".intro h1", {
+        y: 100,
+        opacity: 0,
+        duration: 2,
+        ease: "power4.out"
+      });
 
-    const reveals = document.querySelectorAll(".reveal");
-    reveals.forEach((el) => {
-      gsap.to(el, {
+      const reveals = document.querySelectorAll(".reveal");
+      reveals.forEach((el) => {
+        gsap.to(el, {
+          scrollTrigger: {
+            trigger: el,
+            start: "top 90%",
+            toggleActions: "play none none none"
+          },
+          y: 0,
+          opacity: 1,
+          duration: 1.5,
+          ease: "expo.out"
+        });
+      });
+
+      gsap.to(".scroll-progress", {
+        width: "100%",
+        ease: "none",
         scrollTrigger: {
-          trigger: el,
-          start: "top 90%",
-          toggleActions: "play none none none"
-        },
-        y: 0,
-        opacity: 1,
-        duration: 1.5,
-        ease: "expo.out"
+          trigger: "body",
+          start: "top top",
+          end: "bottom bottom",
+          scrub: 0.3
+        }
       });
     });
 
-    gsap.to(".scroll-progress", {
-      width: "100%",
-      ease: "none",
-      scrollTrigger: {
-        trigger: "body",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: 0.3
-      }
-    });
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      ctx.revert(); // Cleanup GSAP
+    };
   }, []);
 
   return (
@@ -75,7 +85,7 @@ const App = () => {
       <Navigation />
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />
-      <Projects data={landingPageData} />
+      {landingPageData.Project1 && <Projects data={landingPageData} />}
       <Contact data={landingPageData.Contact} />
     </div>
   );

@@ -1,6 +1,10 @@
 import React from "react";
 
 export const Projects = (props) => {
+  if (!props.data || !props.data.Project1) {
+    return null;
+  }
+
   return (
     <div id="portfolio" className="section-padding">
       <div className="container">
@@ -14,11 +18,11 @@ export const Projects = (props) => {
             <span className="tag">Python</span>
             <span className="tag">Kali Linux</span>
             <span className="tag">Security</span>
-            <h3>{props.data?.Project1.title}</h3>
-            <p>{props.data?.Project1.description}</p>
-            <img src={props.data?.Project1.image} alt={props.data?.Project1.title} className="project-card-image" />
+            <h3>{props.data.Project1.title}</h3>
+            <p>{props.data.Project1.description}</p>
+            <img src={props.data.Project1.image} alt={props.data.Project1.title} className="project-card-image" />
             <ul style={{ padding: 0, marginTop: '20px' }}>
-              {props.data?.Project1.features.map((f, i) => (
+              {props.data.Project1.features?.map((f, i) => (
                 <li key={i} style={{ listStyle: 'none', marginBottom: '10px', fontSize: '14px', color: '#888' }}>
                   <i className={f.icon} style={{ color: '#00f2ff', marginRight: '10px' }}></i> {f.title}
                 </li>
@@ -31,18 +35,18 @@ export const Projects = (props) => {
             <span className="tag">AI / ML</span>
             <span className="tag">Next.js</span>
             <span className="tag">Gemini API</span>
-            <h3>{props.data?.Project2.title}</h3>
-            <p>{props.data?.Project2.description}</p>
-            <img src={props.data?.Project2.image} alt={props.data?.Project2.title} className="project-card-image" style={{ height: '180px' }} />
+            <h3>{props.data.Project2?.title}</h3>
+            <p>{props.data.Project2?.description}</p>
+            <img src={props.data.Project2?.image} alt={props.data.Project2?.title} className="project-card-image" style={{ height: '180px' }} />
           </div>
 
           {/* Project 3: AI Travel (Tall/Normal) */}
           <div className="bento-item reveal">
             <span className="tag">Full Stack</span>
             <span className="tag">Firebase</span>
-            <h3>{props.data?.Project3.title}</h3>
-            <p>{props.data?.Project3.description.substring(0, 120)}...</p>
-            <img src={props.data?.Project3.image} alt={props.data?.Project3.title} className="project-card-image" style={{ height: '140px' }} />
+            <h3>{props.data.Project3?.title}</h3>
+            <p>{props.data.Project3?.description?.substring(0, 120)}...</p>
+            <img src={props.data.Project3?.image} alt={props.data.Project3?.title} className="project-card-image" style={{ height: '140px' }} />
           </div>
 
           {/* Special Bento Item: Tech Stack */}
