@@ -115,17 +115,46 @@ h2 {
   background: #111;
   border-radius: 4px;
   overflow: hidden;
+  position: relative;
+}
+
+.work-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 242, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.4s;
+  backdrop-filter: blur(5px);
+}
+
+.work-overlay span {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+}
+
+.clickable-project:hover .work-overlay {
+  opacity: 1;
 }
 
 .work-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 0.5s;
+  transition: 0.8s cubic-bezier(0.2, 0, 0, 1);
 }
 
-.work-item:hover .work-image img {
-  transform: scale(1.05);
+.clickable-project:hover .work-image img {
+  transform: scale(1.1);
 }
 
 .work-info h3 {
@@ -226,4 +255,63 @@ footer {
   h2 {
     font-size: 3rem;
   }
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.modal-content {
+  background: #0a0a0a;
+  width: 100%;
+  max-width: 1400px;
+  max-height: 90vh;
+  padding: 80px;
+  border-radius: 8px;
+  position: relative;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+}
+
+.modal-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 4rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.screenshot-placeholder {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #111;
+  border: 1px dashed var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  font-size: 1.5rem;
+  border-radius: 4px;
 }
