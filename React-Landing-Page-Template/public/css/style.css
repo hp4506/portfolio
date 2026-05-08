@@ -43,6 +43,11 @@ nav {
   letter-spacing: -1px;
 }
 
+.nav-links {
+  display: flex;
+  gap: 60px; /* Added significant gap */
+}
+
 .nav-links a {
   text-decoration: none;
   color: var(--dim);
@@ -63,6 +68,7 @@ nav {
   justify-content: center;
   padding: 0 10%;
 }
+
 
 .hero h1 {
   font-size: clamp(6rem, 20vw, 15rem);

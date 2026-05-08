@@ -53,14 +53,15 @@ const App = () => {
         <Contact data={landingPageData.Contact} />
       </main>
       <footer>
-        <div className="container">
+        <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <p>&copy; 2026 Hansal Patel. Built with React & GSAP.</p>
-          <div className="social-links">
-             <a href="https://linkedin.com/in/hp4506">LinkedIn</a>
-             <a href="https://github.com/hp4506">GitHub</a>
+          <div className="social-links" style={{ display: 'flex', gap: '30px' }}>
+             <a href="https://linkedin.com/in/hp4506" style={{ color: 'var(--accent)', textDecoration: 'none' }}>LinkedIn</a>
+             <a href="https://github.com/hp4506" style={{ color: 'var(--accent)', textDecoration: 'none' }}>GitHub</a>
           </div>
         </div>
       </footer>
+
     </div>
   );
 };
