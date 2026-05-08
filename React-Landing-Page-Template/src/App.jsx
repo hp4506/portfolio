@@ -47,18 +47,19 @@ const App = () => {
 
       const reveals = document.querySelectorAll(".reveal");
       reveals.forEach((el) => {
-        gsap.to(el, {
+        gsap.from(el, {
           scrollTrigger: {
             trigger: el,
-            start: "top 90%",
+            start: "top 95%",
             toggleActions: "play none none none"
           },
-          y: 0,
-          opacity: 1,
+          y: 40,
+          opacity: 0,
           duration: 1.5,
           ease: "expo.out"
         });
       });
+
 
       gsap.to(".scroll-progress", {
         width: "100%",

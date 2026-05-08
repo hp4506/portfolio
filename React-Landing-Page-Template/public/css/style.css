@@ -132,9 +132,10 @@ p {
 
 /* Animations */
 .reveal {
-  opacity: 0;
-  transform: translateY(40px);
+  /* Default visible, GSAP will animate from 0 */
+  opacity: 1;
 }
+
 
 .cursor-glow {
   position: fixed;
