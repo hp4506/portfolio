@@ -19,7 +19,8 @@ body {
   background-color: var(--background);
   color: var(--text);
   overflow-x: hidden;
-  line-height: 1.5;
+  line-height: 1.6;
+  font-size: 18px; /* Increased from default */
 }
 
 /* Navbar */
@@ -27,30 +28,30 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 30px 10%;
+  padding: 40px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
   background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
 }
 
 .logo {
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 2rem; /* Increased */
   letter-spacing: -1px;
 }
 
 .nav-links {
   display: flex;
-  gap: 40px;
+  gap: 50px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: var(--dim);
-  font-size: 0.9rem;
+  font-size: 1.1rem; /* Increased */
   font-weight: 400;
   transition: 0.3s;
 }
@@ -69,46 +70,46 @@ nav {
 }
 
 .hero h1 {
-  font-size: clamp(4rem, 15vw, 10rem);
+  font-size: clamp(5rem, 18vw, 12rem); /* Increased */
   font-weight: 900;
   line-height: 0.8;
-  letter-spacing: -5px;
-  margin-bottom: 20px;
+  letter-spacing: -6px;
+  margin-bottom: 30px;
 }
 
 .hero p {
   color: var(--dim);
-  font-size: 1.2rem;
-  max-width: 500px;
+  font-size: 1.5rem; /* Increased */
+  max-width: 650px; /* Increased */
 }
 
 /* Sections */
 section {
-  padding: 100px 10%;
+  padding: 150px 10%; /* Increased padding */
 }
 
 .section-label {
   color: var(--accent);
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 1rem; /* Increased */
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: block;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 5rem; /* Increased */
   font-weight: 900;
-  margin-bottom: 60px;
-  letter-spacing: -2px;
+  margin-bottom: 80px;
+  letter-spacing: -3px;
 }
 
 /* Works */
 .work-item {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 60px;
-  margin-bottom: 120px;
+  gap: 80px;
+  margin-bottom: 150px;
   align-items: center;
 }
 
@@ -132,13 +133,14 @@ h2 {
 }
 
 .work-info h3 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 3rem; /* Increased */
+  margin-bottom: 25px;
 }
 
 .work-info p {
   color: var(--dim);
-  margin-bottom: 30px;
+  font-size: 1.2rem; /* Increased */
+  margin-bottom: 40px;
 }
 
 .work-tags {
@@ -148,10 +150,10 @@ h2 {
 }
 
 .work-tags span {
-  padding: 5px 15px;
+  padding: 8px 20px;
   border: 1px solid var(--border);
   border-radius: 100px;
-  font-size: 0.8rem;
+  font-size: 1rem; /* Increased */
   color: var(--accent);
 }
 
@@ -159,13 +161,13 @@ h2 {
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 100px;
 }
 
 .about-text p {
-  font-size: 1.5rem;
+  font-size: 2rem; /* Increased */
   line-height: 1.4;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .skills-list {
@@ -175,14 +177,16 @@ h2 {
 }
 
 .skill-category h4 {
+  font-size: 1.5rem; /* Increased */
   color: var(--accent);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .skill-category li {
+  font-size: 1.2rem; /* Increased */
   list-style: none;
   color: var(--dim);
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 /* Contact */
@@ -192,12 +196,12 @@ h2 {
 }
 
 .contact-hero h2 {
-  font-size: 6rem;
-  margin-bottom: 40px;
+  font-size: 8rem; /* Increased */
+  margin-bottom: 50px;
 }
 
 .email-btn {
-  font-size: 2rem;
+  font-size: 3rem; /* Increased */
   color: var(--accent);
   text-decoration: none;
   font-weight: 700;
