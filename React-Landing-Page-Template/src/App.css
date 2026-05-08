@@ -1,0 +1,28 @@
+/* Modern Layout Fixes */
+.section-padding {
+  padding: 140px 0;
+}
+
+@media screen and (max-width: 400px) {
+  #features,
+  #about,
+  #project1,
+  #project2,
+  #project3,
+  #contact,
+  #footer {
+    width: 100%;
+    padding: 60px 20px;
+  }
+}
+
+/* Scroll Progress Bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: var(--accent-blue);
+  z-index: 9999;
+  width: 0%;
+}

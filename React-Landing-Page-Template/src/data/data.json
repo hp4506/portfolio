@@ -1,0 +1,97 @@
+{
+  "Header": {
+    "title": "Hansal Patel",
+    "paragraph": "Aspiring Cybersecurity Professional & Computer Engineering Student. Specialized in penetration testing, security tooling, and AI-driven security solutions."
+  },
+  "About": {
+    "paragraph": "I am a Computer Engineering student at A.D. Patel Institute of Technology (CPI: 9.03) with a passion for cybersecurity. My experience ranges from building custom security toolkits for Kali Linux to developing AI-enabled interview platforms and travel planners. I focus on vulnerability assessment, network analysis, and secure application development.",
+    "Why": [
+      "Penetration Testing",
+      "Network Scanning",
+      "Vulnerability Assessment",
+      "Secure Development"
+    ],
+    "Why2": [
+      "AI Integration",
+      "Cloud Security (Firebase)",
+      "Ethical Hacking",
+      "Full Stack Development"
+    ]
+  },
+  "Project1": {
+    "title": "Cybersecurity Toolkit for Kali Linux",
+    "description": "Built a comprehensive CLI-based penetration testing toolkit covering recon, attack simulation, and data protection. It integrates a Network Scanner, Phishing Tool, URL Inspector, Secure File Sharing, and Wordlist Generator (CUPP). Designed with a modular, menu-driven architecture for streamlined execution on Kali Linux.",
+    "features": [
+      {
+        "icon": "fa fa-terminal",
+        "title": "CLI Powered",
+        "text": "Full interactive command-line interface for efficient security workflows."
+      },
+      {
+        "icon": "fa fa-search",
+        "title": "Recon & Scanning",
+        "text": "Integrated network scanning and URL inspection for vulnerability discovery."
+      },
+      {
+        "icon": "fa fa-shield",
+        "title": "Data Protection",
+        "text": "Built-in tools for secure file sharing and phishing analysis."
+      },
+      {
+        "icon": "fa fa-code-fork",
+        "title": "Modular Design",
+        "text": "Easily expandable architecture allowing for the addition of new security modules."
+      }
+    ]
+  },
+  "Project2": {
+    "title": "AI-Enabled Interview Platform",
+    "description": "Engineered a sophisticated platform for interview preparation and personality analysis using Next.js and the Gemini AI API. Features secure multi-user session management via Firebase and AI-driven API integration for controlled, secure data handling and real-time analysis.",
+    "features": [
+      {
+        "icon": "fa fa-brain",
+        "name": "AI Analysis",
+        "text": "Real-time personality and performance feedback powered by Gemini AI."
+      },
+      {
+        "icon": "fa fa-user-lock",
+        "name": "Secure Auth",
+        "text": "Enterprise-grade multi-user authentication and session management."
+      },
+      {
+        "icon": "fa fa-database",
+        "name": "Data Privacy",
+        "text": "Strict controls over data flow ensuring user information remains protected."
+      }
+    ]
+  },
+  "Project3": {
+    "title": "AI Travel Planner (VagaWise)",
+    "description": "Developed a full-stack AI travel planner that crafts personalized itineraries and budget allocations. Implemented Firebase-backed authentication and secure API communication, integrating third-party APIs with robust input validation to prevent unauthorized access.",
+    "items": [
+      {
+        "title": "Itinerary Generation",
+        "largeImage": "img/portfolio/01-large.jpg",
+        "smallImage": "img/portfolio/01-small.jpg"
+      },
+      {
+        "title": "Budget Optimization",
+        "largeImage": "img/portfolio/02-large.jpg",
+        "smallImage": "img/portfolio/02-small.jpg"
+      },
+      {
+        "title": "Secure Travel Hub",
+        "largeImage": "img/portfolio/03-large.jpg",
+        "smallImage": "img/portfolio/03-small.jpg"
+      }
+    ]
+  },
+  "Contact": {
+    "address": "Anand, Gujarat, India",
+    "phone": "+91 9099529947",
+    "email": "hansalp06@gmail.com",
+    "linkedin": "linkedin.com/in/hansal-patel",
+    "github": "github.com/hp4506",
+    "tryhackme": "tryhackme.com/p/hansalp"
+  }
+}
