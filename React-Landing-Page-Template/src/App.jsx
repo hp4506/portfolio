@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
-import { Features } from "./components/features";
+import { Projects } from "./components/projects";
 import { About } from "./components/about";
-import { Services } from "./components/services";
-import { Gallery } from "./components/gallery";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
@@ -24,20 +22,23 @@ const App = () => {
   useEffect(() => {
     setLandingPageData(JsonData);
     
-    // GSAP Animations
-    gsap.from(".intro h1", {
-      y: 50,
-      opacity: 0,
-      duration: 1.5,
-      ease: "power4.out"
+    // Cursor Glow Effect
+    const cursor = document.querySelector(".cursor-glow");
+    window.addEventListener("mousemove", (e) => {
+      gsap.to(cursor, {
+        x: e.clientX,
+        y: e.clientY,
+        duration: 0.5,
+        ease: "power2.out"
+      });
     });
 
-    gsap.from(".intro p", {
-      y: 30,
+    // GSAP Animations
+    gsap.from(".intro h1", {
+      y: 100,
       opacity: 0,
-      duration: 1.2,
-      delay: 0.5,
-      ease: "power3.out"
+      duration: 2,
+      ease: "power4.out"
     });
 
     const reveals = document.querySelectorAll(".reveal");
@@ -45,13 +46,13 @@ const App = () => {
       gsap.to(el, {
         scrollTrigger: {
           trigger: el,
-          start: "top 85%",
+          start: "top 90%",
           toggleActions: "play none none none"
         },
         y: 0,
         opacity: 1,
-        duration: 1,
-        ease: "power2.out"
+        duration: 1.5,
+        ease: "expo.out"
       });
     });
 
@@ -67,21 +68,17 @@ const App = () => {
     });
   }, []);
 
-
   return (
     <div>
+      <div className="cursor-glow"></div>
       <div className="scroll-progress"></div>
       <Navigation />
       <Header data={landingPageData.Header} />
-
       <About data={landingPageData.About} />
-      <Features data={landingPageData.Project1} id="project1" />
-      <Services data={landingPageData.Project2} id="project2" />
-      <Gallery data={landingPageData.Project3} id="project3" />
+      <Projects data={landingPageData} />
       <Contact data={landingPageData.Contact} />
     </div>
   );
 };
 
 export default App;
-

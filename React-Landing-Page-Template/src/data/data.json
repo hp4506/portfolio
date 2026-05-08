@@ -20,6 +20,7 @@
   },
   "Project1": {
     "title": "Cybersecurity Toolkit for Kali Linux",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
     "description": "Built a comprehensive CLI-based penetration testing toolkit covering recon, attack simulation, and data protection. It integrates a Network Scanner, Phishing Tool, URL Inspector, Secure File Sharing, and Wordlist Generator (CUPP). Designed with a modular, menu-driven architecture for streamlined execution on Kali Linux.",
     "features": [
       {
@@ -46,6 +47,7 @@
   },
   "Project2": {
     "title": "AI-Enabled Interview Platform",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
     "description": "Engineered a sophisticated platform for interview preparation and personality analysis using Next.js and the Gemini AI API. Features secure multi-user session management via Firebase and AI-driven API integration for controlled, secure data handling and real-time analysis.",
     "features": [
       {
@@ -67,8 +69,10 @@
   },
   "Project3": {
     "title": "AI Travel Planner (VagaWise)",
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80",
     "description": "Developed a full-stack AI travel planner that crafts personalized itineraries and budget allocations. Implemented Firebase-backed authentication and secure API communication, integrating third-party APIs with robust input validation to prevent unauthorized access.",
     "items": [
+
       {
         "title": "Itinerary Generation",
         "largeImage": "img/portfolio/01-large.jpg",
