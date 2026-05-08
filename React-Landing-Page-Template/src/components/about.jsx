@@ -1,43 +1,34 @@
 import React from "react";
 
 export const About = (props) => {
+  if (!props.data) return null;
+
   return (
-    <div id="about" className="section-padding">
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-12 col-md-6 reveal">
-            <img src="img/about.jpg" className="img-responsive" alt="Hansal Patel" />
+    <section id="about">
+      <span className="section-label">About Me</span>
+      <div className="about-grid">
+        <div className="about-text reveal">
+          <p>{props.data.paragraph}</p>
+          <p style={{ fontSize: '1rem', color: '#666' }}>
+            Pursuing B.Tech in Computer Engineering at Silver Oak University. 
+            Passionate about Cybersecurity and Full Stack Development.
+          </p>
+        </div>
+        <div className="skills-list reveal">
+          <div className="skill-category">
+            <h4>Security Tools</h4>
+            <ul>
+              {props.data.Why.map((skill, i) => <li key={i}>{skill}</li>)}
+            </ul>
           </div>
-          <div className="col-xs-12 col-md-6 reveal">
-            <div className="about-text">
-              <h2>About Me</h2>
-              <p>{props.data ? props.data.paragraph : "loading..."}</p>
-              <h3>Core Expertise</h3>
-              <div className="list-style">
-                <div className="col-lg-6 col-sm-6 col-xs-12">
-                  <ul>
-                    {props.data
-                      ? props.data.Why.map((d, i) => (
-                          <li key={`${d}-${i}`}>{d}</li>
-                        ))
-                      : "loading"}
-                  </ul>
-                </div>
-                <div className="col-lg-6 col-sm-6 col-xs-12">
-                  <ul>
-                    {props.data
-                      ? props.data.Why2.map((d, i) => (
-                          <li key={`${d}-${i}`}> {d}</li>
-                        ))
-                      : "loading"}
-                  </ul>
-                </div>
-              </div>
-            </div>
+          <div className="skill-category">
+            <h4>Core Expertise</h4>
+            <ul>
+              {props.data.Why2.map((skill, i) => <li key={i}>{skill}</li>)}
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
-

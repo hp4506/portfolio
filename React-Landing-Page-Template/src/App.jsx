@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { Navigation } from "./components/navigation";
-import { Header } from "./components/header";
-import { Projects } from "./components/projects";
-import { About } from "./components/about";
-import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./App.css";
+
+// Components
+import { Navigation } from "./components/navigation";
+import { Header } from "./components/header";
+import { Projects } from "./components/projects";
+import { About } from "./components/about";
+import { Contact } from "./components/contact";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,72 +24,43 @@ const App = () => {
   useEffect(() => {
     setLandingPageData(JsonData);
     
-    // Cursor Glow Effect
-    const cursor = document.querySelector(".cursor-glow");
-    const handleMouseMove = (e) => {
-      if (cursor) {
-        gsap.to(cursor, {
-          x: e.clientX,
-          y: e.clientY,
-          duration: 0.5,
-          ease: "power2.out"
-        });
-      }
-    };
-    window.addEventListener("mousemove", handleMouseMove);
-
-    // GSAP Animations
+    // Smooth GSAP reveals
     const ctx = gsap.context(() => {
-      gsap.from(".intro h1", {
-        y: 100,
-        opacity: 0,
-        duration: 2,
-        ease: "power4.out"
-      });
-
-      const reveals = document.querySelectorAll(".reveal");
-      reveals.forEach((el) => {
-        gsap.from(el, {
-          scrollTrigger: {
-            trigger: el,
-            start: "top 95%",
-            toggleActions: "play none none none"
-          },
-          y: 40,
-          opacity: 0,
-          duration: 1.5,
-          ease: "expo.out"
-        });
-      });
-
-
-      gsap.to(".scroll-progress", {
-        width: "100%",
-        ease: "none",
+      gsap.from(".reveal", {
         scrollTrigger: {
-          trigger: "body",
-          start: "top top",
-          end: "bottom bottom",
-          scrub: 0.3
-        }
+          trigger: ".reveal",
+          start: "top 90%",
+          toggleActions: "play none none none"
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power2.out"
       });
     });
 
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      ctx.revert(); // Cleanup GSAP
-    };
+    return () => ctx.revert();
   }, []);
 
   return (
     <div>
-      <div className="cursor-glow"></div>
-      <div className="scroll-progress"></div>
       <Navigation />
-      <Header data={landingPageData.Header} />
-      <About data={landingPageData.About} />
-      {landingPageData.Project1 && <Projects data={landingPageData} />}
-      <Contact data={landingPageData.Contact} />
+      <main id="page-top">
+        <Header data={landingPageData.Header} />
+        <About data={landingPageData.About} />
+        <Projects data={landingPageData} />
+        <Contact data={landingPageData.Contact} />
+      </main>
+      <footer>
+        <div className="container">
+          <p>&copy; 2026 Hansal Patel. Built with React & GSAP.</p>
+          <div className="social-links">
+             <a href="https://linkedin.com/in/hp4506">LinkedIn</a>
+             <a href="https://github.com/hp4506">GitHub</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
