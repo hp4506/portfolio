@@ -20,7 +20,7 @@ body {
   color: var(--text);
   overflow-x: hidden;
   line-height: 1.6;
-  font-size: 18px; /* Increased from default */
+  font-size: 24px; /* Even larger */
 }
 
 /* Navbar */
@@ -28,31 +28,26 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 40px 10%;
+  padding: 50px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(20px);
 }
 
 .logo {
   font-weight: 900;
-  font-size: 2rem; /* Increased */
+  font-size: 2.5rem;
   letter-spacing: -1px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 50px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: var(--dim);
-  font-size: 1.1rem; /* Increased */
-  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 500;
   transition: 0.3s;
 }
 
@@ -70,38 +65,39 @@ nav {
 }
 
 .hero h1 {
-  font-size: clamp(5rem, 18vw, 12rem); /* Increased */
+  font-size: clamp(6rem, 20vw, 15rem);
   font-weight: 900;
   line-height: 0.8;
-  letter-spacing: -6px;
-  margin-bottom: 30px;
+  letter-spacing: -8px;
+  margin-bottom: 40px;
 }
 
 .hero p {
   color: var(--dim);
-  font-size: 1.5rem; /* Increased */
-  max-width: 650px; /* Increased */
+  font-size: 2rem;
+  max-width: 800px;
 }
+
 
 /* Sections */
 section {
-  padding: 150px 10%; /* Increased padding */
+  padding: 200px 10%;
 }
 
 .section-label {
   color: var(--accent);
   text-transform: uppercase;
-  font-size: 1rem; /* Increased */
+  font-size: 1.2rem;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   display: block;
 }
 
 h2 {
-  font-size: 5rem; /* Increased */
+  font-size: 7rem;
   font-weight: 900;
-  margin-bottom: 80px;
-  letter-spacing: -3px;
+  margin-bottom: 100px;
+  letter-spacing: -4px;
 }
 
 /* Works */
@@ -133,14 +129,14 @@ h2 {
 }
 
 .work-info h3 {
-  font-size: 3rem; /* Increased */
-  margin-bottom: 25px;
+  font-size: 4rem;
+  margin-bottom: 30px;
 }
 
 .work-info p {
   color: var(--dim);
-  font-size: 1.2rem; /* Increased */
-  margin-bottom: 40px;
+  font-size: 1.8rem;
+  margin-bottom: 50px;
 }
 
 .work-tags {
@@ -150,10 +146,10 @@ h2 {
 }
 
 .work-tags span {
-  padding: 8px 20px;
+  padding: 10px 25px;
   border: 1px solid var(--border);
   border-radius: 100px;
-  font-size: 1rem; /* Increased */
+  font-size: 1.2rem;
   color: var(--accent);
 }
 
@@ -165,10 +161,11 @@ h2 {
 }
 
 .about-text p {
-  font-size: 2rem; /* Increased */
+  font-size: 2.5rem;
   line-height: 1.4;
   margin-bottom: 40px;
 }
+
 
 .skills-list {
   display: grid;
@@ -177,16 +174,16 @@ h2 {
 }
 
 .skill-category h4 {
-  font-size: 1.5rem; /* Increased */
+  font-size: 2.2rem;
   color: var(--accent);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .skill-category li {
-  font-size: 1.2rem; /* Increased */
+  font-size: 1.6rem;
   list-style: none;
   color: var(--dim);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 /* Contact */
@@ -196,12 +193,12 @@ h2 {
 }
 
 .contact-hero h2 {
-  font-size: 8rem; /* Increased */
-  margin-bottom: 50px;
+  font-size: 10rem;
+  margin-bottom: 60px;
 }
 
 .email-btn {
-  font-size: 3rem; /* Increased */
+  font-size: 4rem;
   color: var(--accent);
   text-decoration: none;
   font-weight: 700;
