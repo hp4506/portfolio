@@ -16,12 +16,11 @@ jobs:
 
     - name: Install and Build
       run: |
-        cd React-Landing-Page-Template
         npm install
         npm run build
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        folder: React-Landing-Page-Template/build
+        folder: build
         branch: gh-pages
