@@ -46,6 +46,20 @@ const App = () => {
   return (
     <div>
       <Navigation />
+      
+      {/* Social Sidebar */}
+      <div className="social-sidebar">
+        <a href="https://github.com/hp4506" target="_blank" rel="noreferrer"><i className="fa fa-github"></i></a>
+        <a href="https://linkedin.com/in/hp4506" target="_blank" rel="noreferrer"><i className="fa fa-linkedin"></i></a>
+        <a href="#" target="_blank" rel="noreferrer"><i className="fa fa-twitter"></i></a>
+        <a href="#" target="_blank" rel="noreferrer"><i className="fa fa-instagram"></i></a>
+      </div>
+
+      {/* Resume Button */}
+      <a href="#" className="resume-btn" target="_blank" rel="noreferrer">
+        RESUME <i className="fa fa-file-text-o"></i>
+      </a>
+
       <main id="page-top">
         <Header data={landingPageData.Header} />
         <About data={landingPageData.About} />
@@ -56,8 +70,8 @@ const App = () => {
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <p>&copy; 2026 Hansal Patel. Built with React & GSAP.</p>
           <div className="social-links" style={{ display: 'flex', gap: '30px' }}>
-             <a href="https://linkedin.com/in/hp4506" style={{ color: 'var(--accent)', textDecoration: 'none' }}>LinkedIn</a>
-             <a href="https://github.com/hp4506" style={{ color: 'var(--accent)', textDecoration: 'none' }}>GitHub</a>
+             <a href="https://linkedin.com/in/hp4506" style={{ color: 'var(--accent-purple)', textDecoration: 'none' }}>LinkedIn</a>
+             <a href="https://github.com/hp4506" style={{ color: 'var(--accent-purple)', textDecoration: 'none' }}>GitHub</a>
           </div>
         </div>
       </footer>

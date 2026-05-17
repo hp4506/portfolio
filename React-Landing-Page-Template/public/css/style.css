@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
 
 :root {
-  --background: #000000;
+  --background: #0b0a10;
   --text: #ffffff;
   --accent: #00f2ff;
-  --dim: #666666;
+  --accent-purple: #8b5cf6;
+  --dim: #a0a0a0;
   --border: rgba(255, 255, 255, 0.1);
 }
 
@@ -28,63 +29,149 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 50px 10%;
+  padding: 40px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.9);
-  backdrop-filter: blur(20px);
+  background: transparent;
 }
 
 .logo {
-  font-weight: 900;
-  font-size: 2.5rem;
-  letter-spacing: -1px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0px;
+}
+
+.nav-email {
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .nav-links {
   display: flex;
-  gap: 60px; /* Added significant gap */
+  gap: 40px;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: var(--dim);
-  font-size: 1.3rem;
-  font-weight: 500;
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   transition: 0.3s;
 }
 
 .nav-links a:hover {
-  color: var(--accent);
+  color: var(--accent-purple);
 }
 
 /* Hero */
 .hero {
   height: 100vh;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at center, rgba(106, 42, 137, 0.3) 0%, #0b0a10 60%);
+}
+
+.hero-left, .hero-right {
+  z-index: 10;
+  position: relative;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0 10%;
 }
 
+.hero-right {
+  text-align: left;
+}
 
-.hero h1 {
-  font-size: clamp(6rem, 20vw, 15rem);
+.hero-subtitle {
+  color: #a78bfa;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.hero-title-white {
+  font-size: clamp(3rem, 6vw, 7rem);
   font-weight: 900;
-  line-height: 0.8;
-  letter-spacing: -8px;
-  margin-bottom: 40px;
+  line-height: 1.1;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
-.hero p {
-  color: var(--dim);
-  font-size: 2rem;
-  max-width: 800px;
+.hero-title-dark {
+  font-size: clamp(3rem, 6vw, 7rem);
+  font-weight: 900;
+  line-height: 1.1;
+  color: #1a1525;
+  text-shadow: 0px 0px 30px rgba(139, 92, 246, 0.4);
+  text-transform: uppercase;
 }
 
+.hero-image-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 85vh;
+  z-index: 5;
+  display: flex;
+  align-items: flex-end;
+}
 
+.hero-image-container img {
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Socials & Resume Sidebar */
+.social-sidebar {
+  position: fixed;
+  left: 40px;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  z-index: 100;
+}
+
+.social-sidebar a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.social-sidebar a:hover {
+  color: var(--accent-purple);
+}
+
+.resume-btn {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 100;
+  color: #a0a0a0;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.resume-btn:hover {
+  color: #fff;
+}
 /* Sections */
 section {
   padding: 200px 10%;
