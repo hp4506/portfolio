@@ -29,12 +29,16 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 40px 8%;
+  padding: 20px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  background: transparent;
+  background: rgba(11, 10, 16, 0.75); /* Semi-transparent dark matching background */
+  backdrop-filter: blur(15px); /* Blurred glass effect */
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Sleek separator line */
+  transition: all 0.3s ease;
 }
 
 .logo {
