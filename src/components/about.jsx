@@ -10,7 +10,7 @@ export const About = (props) => {
         <div className="about-text reveal">
           <p>{props.data.paragraph}</p>
           <p style={{ fontSize: '1rem', color: '#666' }}>
-            Pursuing B.Tech in Computer Engineering at Silver Oak University. 
+            Pursuing B.Tech in Computer Engineering at A.D. Patel Institute Of Technology. 
             Passionate about Cybersecurity and Full Stack Development.
           </p>
         </div>
