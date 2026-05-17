@@ -3,16 +3,25 @@ name: Deploy landing page
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+
+permissions:
+  contents: write
 
 jobs:
-  build:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
-    
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v3
 
-    - name: Deploy react app to github pages
-      uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
+    - name: Install and Build
+      run: |
+        cd React-Landing-Page-Template
+        npm install
+        npm run build
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: React-Landing-Page-Template/build
+        branch: gh-pages
