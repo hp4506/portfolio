@@ -22,7 +22,7 @@ export const About = (props) => {
             </ul>
           </div>
           <div className="skill-category">
-            <h4>Core Expertise</h4>
+            <h4>Skills</h4>
             <ul>
               {props.data.Why2.map((skill, i) => <li key={i}>{skill}</li>)}
             </ul>
