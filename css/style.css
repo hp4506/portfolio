@@ -102,7 +102,7 @@ nav {
 
 .hero-subtitle {
   color: #a78bfa;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   font-weight: 600;
   margin-bottom: 5px;
   letter-spacing: 0.15em !important;
@@ -110,22 +110,22 @@ nav {
 }
 
 .hero-title-white {
-  font-size: clamp(2.5rem, 5.5vw, 4.8rem);
+  font-size: clamp(2.8rem, 6vw, 6rem);
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.05;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: -0.03em;
+  letter-spacing: -2px;
 }
 
 .hero-title-dark {
-  font-size: clamp(2.5rem, 5.5vw, 4.8rem);
+  font-size: clamp(2.8rem, 6vw, 6rem);
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.05;
   color: #171522;
   text-shadow: 0px 0px 30px rgba(139, 92, 246, 0.4);
   text-transform: uppercase;
-  letter-spacing: -0.03em;
+  letter-spacing: -2px;
 }
 
 .hero-image-container {
