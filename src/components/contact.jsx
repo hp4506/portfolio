@@ -10,9 +10,9 @@ export const Contact = (props) => {
           {props.data?.email || "Get in Touch"}
         </a>
       </div>
-      <div style={{ marginTop: '60px', color: '#666' }} className="reveal">
-        <p>{props.data?.phone}</p>
-        <p>{props.data?.address}</p>
+      <div className="contact-details reveal">
+        <p className="contact-phone">{props.data?.phone}</p>
+        <p className="contact-address">{props.data?.address}</p>
       </div>
     </section>
   );

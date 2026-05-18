@@ -51,12 +51,10 @@ const App = () => {
       <div className="social-sidebar">
         <a href="https://github.com/hp4506" target="_blank" rel="noreferrer"><i className="fa fa-github"></i></a>
         <a href="https://linkedin.com/in/hp4506" target="_blank" rel="noreferrer"><i className="fa fa-linkedin"></i></a>
-        <a href="#" target="_blank" rel="noreferrer"><i className="fa fa-twitter"></i></a>
-        <a href="#" target="_blank" rel="noreferrer"><i className="fa fa-instagram"></i></a>
       </div>
 
       {/* Resume Button */}
-      <a href="#" className="resume-btn" target="_blank" rel="noreferrer">
+      <a href="/resume.pdf" className="resume-btn" target="_blank" rel="noreferrer">
         RESUME <i className="fa fa-file-text-o"></i>
       </a>
 
