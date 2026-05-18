@@ -82,7 +82,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 13%;
   position: relative;
   overflow: hidden;
   background: radial-gradient(circle at center, rgba(139, 92, 246, 0.12) 0%, #0b0a10 70%);
@@ -97,8 +97,7 @@ nav {
 }
 
 .hero-right {
-  text-align: right;
-  align-items: flex-end;
+  text-align: left;
 }
 
 .hero-subtitle {
