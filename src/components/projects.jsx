@@ -24,7 +24,7 @@ export const Projects = (props) => {
   return (
     <section id="portfolio">
       <span className="section-label">Portfolio</span>
-      <h2>Selected Works</h2>
+      <h2>Featured Projects</h2>
       
       {projectList.map((project, index) => (
         <div 
