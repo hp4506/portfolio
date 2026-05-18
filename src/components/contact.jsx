@@ -17,17 +17,17 @@ Looking forward to connecting!
 Best regards,
 [Your Name]`;
 
-  const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
   return (
     <section id="contact" className="contact-hero">
       <span className="section-label">Connect</span>
       <h2 className="reveal" style={{ marginBottom: "15px" }}>Let's work together.</h2>
       <p className="reveal" style={{ color: "#888", fontSize: "1.1rem", marginBottom: "40px", fontWeight: "300" }}>
-        Click below to instantly open a pre-filled email and start a conversation.
+        Click below to instantly open a new tab in Gmail and start a conversation.
       </p>
       <div className="reveal">
-        <a href={mailtoUrl} className="connect-btn">
+        <a href={gmailUrl} className="connect-btn" target="_blank" rel="noopener noreferrer">
           Let's Connect
           <svg 
             width="18" 
