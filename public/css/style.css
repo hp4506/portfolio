@@ -392,25 +392,45 @@ h2 {
 
 .contact-hero h2 {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
-  margin-bottom: 30px;
   font-weight: 900;
   letter-spacing: -0.03em;
   line-height: 1.15;
 }
 
-.email-btn {
-  font-size: clamp(1.6rem, 4vw, 2.5rem);
-  color: var(--accent);
-  text-decoration: none;
+.connect-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 40px;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
   font-weight: 700;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 5px;
-  transition: all 0.3s ease;
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(139, 92, 246, 0.03) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  cursor: pointer;
 }
 
-.email-btn:hover {
-  color: var(--accent-purple);
-  border-bottom-color: var(--accent-purple);
+.connect-btn:hover {
+  color: #ffffff !important;
+  background: var(--accent-purple);
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 35px rgba(139, 92, 246, 0.4);
+  transform: translateY(-3px);
+}
+
+.connect-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.connect-btn:hover svg {
+  transform: translateX(4px);
 }
 
 .contact-details {
