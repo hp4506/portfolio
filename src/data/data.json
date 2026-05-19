@@ -21,25 +21,25 @@
   "Project1": {
     "title": "Cybersecurity Toolkit for Kali Linux (CyberToolkit)",
     "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
-    "description": "Built a comprehensive CLI-based penetration testing toolkit covering recon, attack simulation, and data protection. It integrates a Network Scanner, Phishing Tool, URL Inspector, Secure File Sharing, and Wordlist Generator (CUPP). Designed with a modular, menu-driven architecture for streamlined execution on Kali Linux.",
-    "tags": ["Python", "Kali Linux", "Security", "OSINT"],
-    "overview": "CyberToolkit is a centralized, modular security platform developed in a Linux environment to streamline penetration testing, threat detection, and vulnerability assessments. Written primarily in Python and Bash, the toolkit aggregates critical offensive and defensive utilities into a single, cohesive workflow, enabling security analysts to simulate real-world attacks and audit network defenses efficiently.",
+    "description": "Built a comprehensive CLI-based penetration testing toolkit covering recon, attack simulation, and data protection. It integrates a Network Scanner (CyberSniffer), Phishing Tool, URL Inspector, Secure File Sharing, DDoS simulator, RDP auditing, and Wordlist Generator (CUPP). Designed with a modular, menu-driven architecture for streamlined execution on Kali Linux.",
+    "tags": ["Python", "Kali Linux", "Security", "OSINT", "Bash", "ZAP"],
+    "overview": "CyberToolkit is a centralized, modular security platform developed in a Linux environment to streamline penetration testing, threat detection, and vulnerability assessments. Written primarily in Python and Bash, the toolkit aggregates critical offensive and defensive utilities into a single, cohesive workflow. It includes integrations with tools like zaproxy and custom scripts (CyberSniffer.py, RDP.py, URLInspect.py) enabling security analysts to simulate real-world attacks, audit network defenses, and analyze web vulnerabilities efficiently.",
     "capabilities": [
       {
         "title": "Intelligence & Profiling Engine",
-        "text": "Integrates targeted OSINT and dictionary-generation frameworks (like CUPP) to simulate credential-harvesting vulnerabilities based on custom behavioral profiles."
+        "text": "Integrates targeted OSINT and dictionary-generation frameworks (including the Common User Passwords Profiler - CUPP) to simulate credential-harvesting vulnerabilities based on custom behavioral profiles."
       },
       {
         "title": "Active Defense & Detection",
-        "text": "Features a real-time phishing and URL inspection utility that programmatically evaluates web domains to intercept social engineering vectors."
+        "text": "Features a real-time phishing detection engine (phishing_detector.py) and a URL inspection utility (URLInspect.py) that programmatically evaluates web domains to intercept social engineering vectors."
       },
       {
         "title": "Network Auditing & Traffic Analysis",
-        "text": "Equipped with localized packet sniffing (CyberSniffer.py) and protocol-specific utilities (RDP, DDoS simulation scripts) to test infrastructure resilience against traffic inflation and unauthorized access."
+        "text": "Equipped with localized packet sniffing (CyberSniffer.py), protocol-specific auditing utilities (RDP.py), and a DDoS simulation script (DDos.py) to test infrastructure resilience against traffic inflation and unauthorized access."
       },
       {
-        "title": "Secure Infrastructure Utilities",
-        "text": "Includes secure file-sharing mechanisms and automation scripts (setup.sh, File_Transfer.sh) to ensure encrypted data movement and rapid environment deployment during field assessments."
+        "title": "Secure Infrastructure & Web Testing",
+        "text": "Includes secure file-sharing mechanisms (secure_file_sharer.py), rapid deployment automation (setup.sh, File_Transfer.sh), and integration with web application security scanners like zaproxy."
       }
     ],
     "screenshots": [
