@@ -20,7 +20,7 @@
   },
   "Project1": {
     "title": "Cybersecurity Toolkit for Kali Linux (CyberToolkit)",
-    "image": "img/portfolio/cybertoolkit-overview.png",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
     "description": "Built a comprehensive CLI-based penetration testing toolkit covering recon, attack simulation, and data protection. It integrates a Network Scanner, Phishing Tool, URL Inspector, Secure File Sharing, and Wordlist Generator (CUPP). Designed with a modular, menu-driven architecture for streamlined execution on Kali Linux.",
     "tags": ["Python", "Kali Linux", "Security", "OSINT"],
     "overview": "CyberToolkit is a centralized, modular security platform developed in a Linux environment to streamline penetration testing, threat detection, and vulnerability assessments. Written primarily in Python and Bash, the toolkit aggregates critical offensive and defensive utilities into a single, cohesive workflow, enabling security analysts to simulate real-world attacks and audit network defenses efficiently.",
