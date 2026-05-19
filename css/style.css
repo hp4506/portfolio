@@ -97,7 +97,7 @@ nav {
 }
 
 .hero-right {
-  text-align: left;
+  text-align: right;
 }
 
 .hero-subtitle {
@@ -438,6 +438,63 @@ h2 {
   flex-direction: column;
   gap: 8px;
   align-items: center;
+}
+
+.contact-phone, .contact-address {
+  font-size: 1.1rem !important;
+  color: #888;
+  font-weight: 400;
+  margin: 0 !important;
+}
+
+/* Footer */
+footer {
+  padding: 45px 10%;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  color: var(--dim);
+  font-size: 0.85rem;
+  background-color: #08070c;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .work-item, .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .work-image {
+    height: 350px;
+  }
+  .social-sidebar {
+    display: none; /* Hide sidebar on small viewports and display links in footer */
+  }
+  .resume-btn {
+    right: 20px;
+    bottom: 20px;
+  }
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title-white, .hero-title-dark {
+    font-size: clamp(2rem, 9vw, 3.2rem);
+    letter-spacing: -1.2px;
+  }
+  .hero-subtitle {
+    font-size: 0.95rem;
+    letter-spacing: 0.12em !important;
+  }
+  .hero {
+    padding: 120px 6% 60px 6%;
+    gap: 40px;
+  }
 }
 
 .contact-phone, .contact-address {
