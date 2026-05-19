@@ -19,51 +19,84 @@
     ]
   },
   "Project1": {
-    "title": "Cybersecurity Toolkit for Kali Linux",
-    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    "title": "Cybersecurity Toolkit for Kali Linux (CyberToolkit)",
+    "image": "img/portfolio/cybertoolkit-overview.png",
     "description": "Built a comprehensive CLI-based penetration testing toolkit covering recon, attack simulation, and data protection. It integrates a Network Scanner, Phishing Tool, URL Inspector, Secure File Sharing, and Wordlist Generator (CUPP). Designed with a modular, menu-driven architecture for streamlined execution on Kali Linux.",
-    "features": [
+    "tags": ["Python", "Kali Linux", "Security", "OSINT"],
+    "overview": "CyberToolkit is a centralized, modular security platform developed in a Linux environment to streamline penetration testing, threat detection, and vulnerability assessments. Written primarily in Python and Bash, the toolkit aggregates critical offensive and defensive utilities into a single, cohesive workflow, enabling security analysts to simulate real-world attacks and audit network defenses efficiently.",
+    "capabilities": [
       {
-        "icon": "fa fa-terminal",
-        "title": "CLI Powered",
-        "text": "Full interactive command-line interface for efficient security workflows."
+        "title": "Intelligence & Profiling Engine",
+        "text": "Integrates targeted OSINT and dictionary-generation frameworks (like CUPP) to simulate credential-harvesting vulnerabilities based on custom behavioral profiles."
       },
       {
-        "icon": "fa fa-search",
-        "title": "Recon & Scanning",
-        "text": "Integrated network scanning and URL inspection for vulnerability discovery."
+        "title": "Active Defense & Detection",
+        "text": "Features a real-time phishing and URL inspection utility that programmatically evaluates web domains to intercept social engineering vectors."
       },
       {
-        "icon": "fa fa-shield",
-        "title": "Data Protection",
-        "text": "Built-in tools for secure file sharing and phishing analysis."
+        "title": "Network Auditing & Traffic Analysis",
+        "text": "Equipped with localized packet sniffing (CyberSniffer.py) and protocol-specific utilities (RDP, DDoS simulation scripts) to test infrastructure resilience against traffic inflation and unauthorized access."
       },
       {
-        "icon": "fa fa-code-fork",
-        "title": "Modular Design",
-        "text": "Easily expandable architecture allowing for the addition of new security modules."
+        "title": "Secure Infrastructure Utilities",
+        "text": "Includes secure file-sharing mechanisms and automation scripts (setup.sh, File_Transfer.sh) to ensure encrypted data movement and rapid environment deployment during field assessments."
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "img/portfolio/cybertoolkit-overview.png",
+        "caption": "CyberToolkit CLI Interface and Directory Structure"
+      },
+      {
+        "src": "img/portfolio/cybertoolkit-cupp.png",
+        "caption": "Behavioral Profiler & Dictionary Generation Utility (CUPP)"
+      },
+      {
+        "src": "img/portfolio/cybertoolkit-ddos.png",
+        "caption": "DDoS Attack Simulation Utility (Port & Traffic Auditing)"
+      },
+      {
+        "src": "img/portfolio/cybertoolkit-phishing.png",
+        "caption": "Phishing Detector and Live URL Analysis Engine"
       }
     ]
   },
   "Project2": {
-    "title": "AI-Enabled Interview Platform",
+    "title": "AI-Enabled Interview Platform (TalentAI)",
     "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
     "description": "Engineered a sophisticated platform for interview preparation and personality analysis using Next.js and the Gemini AI API. Features secure multi-user session management via Firebase and AI-driven API integration for controlled, secure data handling and real-time analysis.",
-    "features": [
+    "tags": ["AI / ML", "Next.js", "Firebase", "Gemini API"],
+    "overview": "TalentAI is a state-of-the-art mock interview simulation and personality assessment platform. It leverages Gemini AI to generate customized, role-specific questions and analyze user responses in real-time. By integrating speech-to-text and NLP analysis, it offers actionable feedback on technical accuracy, communication style, and personality alignment, preparing candidates with professional readiness insights.",
+    "capabilities": [
       {
-        "icon": "fa fa-brain",
-        "name": "AI Analysis",
-        "text": "Real-time personality and performance feedback powered by Gemini AI."
+        "title": "Custom AI Question Generator",
+        "text": "Dynamically crafts industry-standard technical and behavioral questions based on resume parsing and targeted job roles."
       },
       {
-        "icon": "fa fa-user-lock",
-        "name": "Secure Auth",
-        "text": "Enterprise-grade multi-user authentication and session management."
+        "title": "Real-Time Sentiment & Speech Analysis",
+        "text": "Analyzes response transcripts for tone, filler word usage, and semantic confidence to score communication performance."
       },
       {
-        "icon": "fa fa-database",
-        "name": "Data Privacy",
-        "text": "Strict controls over data flow ensuring user information remains protected."
+        "title": "Interactive Analytics Dashboard",
+        "text": "Visualizes candidate progress over multiple sessions with performance breakdown charts across core competency matrices."
+      },
+      {
+        "title": "Secure Session Management",
+        "text": "Powered by Firebase Auth and Firestore to handle user data securely, ensuring privacy-compliant storage of interview transcripts and feedback."
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "img/portfolio/04-large.jpg",
+        "caption": "AI Mock Interview Setup & Candidate Interface"
+      },
+      {
+        "src": "img/portfolio/05-large.jpg",
+        "caption": "Real-Time AI Response Scoring & Sentiment Analysis Report"
+      },
+      {
+        "src": "img/portfolio/06-large.jpg",
+        "caption": "Comprehensive Performance Analytics & Skill Growth Dashboard"
       }
     ]
   },
@@ -71,22 +104,38 @@
     "title": "AI Travel Planner (VagaWise)",
     "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80",
     "description": "Developed a full-stack AI travel planner that crafts personalized itineraries and budget allocations. Implemented Firebase-backed authentication and secure API communication, integrating third-party APIs with robust input validation to prevent unauthorized access.",
-    "items": [
-
+    "tags": ["Full Stack", "Firebase", "API Integration", "Algorithms"],
+    "overview": "VagaWise is a smart, budget-conscious travel itinerary planner designed to automate trip coordination. Using Gemini AI, it generates complete travel routes, lodging recommendations, and daily activity logs. The system features custom budget allocation algorithms that dynamically calculate cost-of-living adjustments for target destinations, giving users realistic, stress-free travel plans.",
+    "capabilities": [
       {
-        "title": "Itinerary Generation",
-        "largeImage": "img/portfolio/01-large.jpg",
-        "smallImage": "img/portfolio/01-small.jpg"
+        "title": "Intelligent Itinerary Builder",
+        "text": "Generates location-aware daily schedules and mapping suggestions using semantic city-by-city route optimization."
       },
       {
-        "title": "Budget Optimization",
-        "largeImage": "img/portfolio/02-large.jpg",
-        "smallImage": "img/portfolio/02-small.jpg"
+        "title": "Dynamic Budget Allocation Engine",
+        "text": "Splits trip budgets into hotel, dining, transit, and leisure tiers based on cost-of-living indices and user preference curves."
       },
       {
-        "title": "Secure Travel Hub",
-        "largeImage": "img/portfolio/03-large.jpg",
-        "smallImage": "img/portfolio/03-small.jpg"
+        "title": "Historical Trip Archives & Synchronization",
+        "text": "Synchronizes local storage data with Firestore to persist plans, enabling instant offline access and seamless multi-device updates."
+      },
+      {
+        "title": "Secure Third-Party API Integration",
+        "text": "Encapsulates external API endpoints with rate-limiting and validation layers to defend backend integrity."
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "img/portfolio/01-large.jpg",
+        "caption": "AI Travel Planner Custom Itinerary Setup"
+      },
+      {
+        "src": "img/portfolio/02-large.jpg",
+        "caption": "Cost-of-Living Aware Budget Tier Allocation Dashboard"
+      },
+      {
+        "src": "img/portfolio/03-large.jpg",
+        "caption": "Trip History and Offline Storage Management Hub"
       }
     ]
   },
