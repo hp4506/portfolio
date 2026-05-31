@@ -87,16 +87,24 @@
     ],
     "screenshots": [
       {
-        "src": "img/portfolio/careerly-interview.png",
-        "caption": "AI Mock Interview Module & Real-Time Analysis"
+        "src": "img/portfolio/careerly-screenshot-1.png",
+        "caption": "Careerly Landing Page & Secure Hiring Proposition"
       },
       {
-        "src": "img/portfolio/careerly-technical.png",
-        "caption": "Technical Round - Interactive Coding Environment"
+        "src": "img/portfolio/careerly-screenshot-2.png",
+        "caption": "Advanced AI Capabilities & Core Modules"
       },
       {
-        "src": "img/portfolio/careerly-aptitude.png",
-        "caption": "Military-Grade Proctoring System active during Aptitude Assessment"
+        "src": "img/portfolio/careerly-screenshot-3.png",
+        "caption": "Personalized Dashboard & User Journey"
+      },
+      {
+        "src": "img/portfolio/careerly-screenshot-4.png",
+        "caption": "Flexible Pro & Premium Subscription Plans"
+      },
+      {
+        "src": "img/portfolio/careerly-screenshot-5.png",
+        "caption": "AI Enabled General Aptitude Test Configuration"
       }
     ]
   },
