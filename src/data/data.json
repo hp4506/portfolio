@@ -62,41 +62,41 @@
     ]
   },
   "Project2": {
-    "title": "AI-Enabled Interview Platform (TalentAI)",
+    "title": "AI Placement Preparation Suite (Careerly)",
     "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
-    "description": "Engineered a sophisticated platform for interview preparation and personality analysis using Next.js and the Gemini AI API. Features secure multi-user session management via Firebase and AI-driven API integration for controlled, secure data handling and real-time analysis.",
-    "tags": ["AI / ML", "Next.js", "Firebase", "Gemini API"],
-    "overview": "TalentAI is a state-of-the-art mock interview simulation and personality assessment platform. It leverages Gemini AI to generate customized, role-specific questions and analyze user responses in real-time. By integrating speech-to-text and NLP analysis, it offers actionable feedback on technical accuracy, communication style, and personality alignment, preparing candidates with professional readiness insights.",
+    "description": "Engineered an all-in-one AI placement suite designed for next-generation hiring. Features comprehensive modules for Aptitude Assessments, Technical Coding challenges, and AI Mock Interviews, all protected by a military-grade AI proctoring system.",
+    "tags": ["AI / ML", "Next.js", "Proctoring", "Full Stack"],
+    "overview": "Careerly (formerly Interview IQ) is a state-of-the-art placement preparation platform. It provides candidates with an immersive environment to master logical reasoning, solve complex coding challenges across multiple languages, and experience realistic, high-pressure behavioral and technical AI mock interviews. The platform incorporates a robust anti-cheat protocol, ensuring exam integrity with tab-switch detection and fullscreen lock.",
     "capabilities": [
       {
-        "title": "Custom AI Question Generator",
-        "text": "Dynamically crafts industry-standard technical and behavioral questions based on resume parsing and targeted job roles."
+        "title": "AI Mock Interviews",
+        "text": "Experience realistic, high-pressure interview scenarios with in-depth behavioral and technical AI analysis."
       },
       {
-        "title": "Real-Time Sentiment & Speech Analysis",
-        "text": "Analyzes response transcripts for tone, filler word usage, and semantic confidence to score communication performance."
+        "title": "Technical Excellence Editor",
+        "text": "Solve complex coding challenges across multiple languages with instant execution results and logic efficiency analysis."
       },
       {
-        "title": "Interactive Analytics Dashboard",
-        "text": "Visualizes candidate progress over multiple sessions with performance breakdown charts across core competency matrices."
+        "title": "Aptitude Assessment Engine",
+        "text": "Master logical reasoning and quantitative math with real-time scoring and comprehensive analytics."
       },
       {
-        "title": "Secure Session Management",
-        "text": "Powered by Firebase Auth and Firestore to handle user data securely, ensuring privacy-compliant storage of interview transcripts and feedback."
+        "title": "Military-Grade Exam Security",
+        "text": "AI-driven proctoring system featuring auto-submission, tab-switch detection, fullscreen lock, and disabled copy-paste."
       }
     ],
     "screenshots": [
       {
-        "src": "img/portfolio/04-large.jpg",
-        "caption": "AI Mock Interview Setup & Candidate Interface"
+        "src": "img/portfolio/careerly-interview.png",
+        "caption": "AI Mock Interview Module & Real-Time Analysis"
       },
       {
-        "src": "img/portfolio/05-large.jpg",
-        "caption": "Real-Time AI Response Scoring & Sentiment Analysis Report"
+        "src": "img/portfolio/careerly-technical.png",
+        "caption": "Technical Round - Interactive Coding Environment"
       },
       {
-        "src": "img/portfolio/06-large.jpg",
-        "caption": "Comprehensive Performance Analytics & Skill Growth Dashboard"
+        "src": "img/portfolio/careerly-aptitude.png",
+        "caption": "Military-Grade Proctoring System active during Aptitude Assessment"
       }
     ]
   },
